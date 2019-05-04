@@ -1,353 +1,349 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <!-- to define how the app should function/look like-->
-      <link rel="manifest" href="../../config/mobile/manifest.json">
-      <!-- launch fullscreen on mobile -->
-      <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="mobile-web-app-capable" content="yes">
-        <!-- viewport for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- link font awesome-->
-      <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <!-- parrallax css -->
-        <link rel="stylesheet" href="../css/parallax.css" >
-         <!-- little css tweaks -->
-         <link rel="stylesheet" href="../css/littleTweaks.css" >
-        <!-- footer css-->
-        <link rel="stylesheet" href="../css/footer.css" >
-        <!-- airbnb-banner css-->
-        <link rel="stylesheet" href="../css/banner.css" >
-        <!-- wohnungsbeschreibung css-->
-        <link rel="stylesheet" href="../css/wohnungenbeschreibung.css" >
-        <!-- quote carousel css-->
-        <link rel="stylesheet" href="../css/quotecarousel.css">
-        <!-- Wohnungen + Text Übersicht Section-->
-        <link rel="stylesheet" href="../css/wohnungenuebersicht.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
+  <head>
+    <!-- launch fullscreen on mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- viewport for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link font awesome-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- parrallax css -->
+    <link rel="stylesheet" href="../css/parallax.css" >
+    <!-- little css tweaks -->
+    <link rel="stylesheet" href="../css/littleTweaks.css" >
+    <!-- footer css-->
+    <link rel="stylesheet" href="../css/footer.css" >
+    <!-- airbnb-banner css-->
+    <link rel="stylesheet" href="../css/banner.css" >
+    <!-- wohnungsbeschreibung css-->
+    <link rel="stylesheet" href="../css/wohnungenbeschreibung.css" >
+    <!-- quote carousel css-->
+    <link rel="stylesheet" href="../css/quotecarousel.css">
+    <!-- Wohnungen + Text Übersicht Section-->
+    <link rel="stylesheet" href="../css/wohnungenuebersicht.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
 
-    <!-- Static navbar -->
+<!-- Static navbar -->
     <nav class="navbar navbar-default" style="margin-bottom: 0">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Ferienwohnungen Friedrichskoog</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="home">Home</a></li>
-              <li><a href="pricesOverview">Preise & Leistungen</a></li>
-              <li><a href="#">Kontakt</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ferienwohnungen <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-header">Kleine Ferienwohnung</li>
-                  <li><a href="wohnung1" id="wohnung1" >Hier zur Ferienwohnung 1</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Mittlere Ferienwohnung</li>
-                  <li><a href="wohnung2">Hier zur Ferienwohnung 2</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Große Ferienwohnung</li>
-                  <li><a href="wohnung3">Hier zur Ferienwohnung 3</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="pricesOverview">Hier zur Übersicht</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right text-center">
-                <a href="anfrage"><button class="btn btn-info navbar-btn">Unverbindliche Anfrage Starten</button></a>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-      <!-- end navbar-->
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Ferienwohnungen Friedrichskoog</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="home">Home</a></li>
+                <li><a href="pricesOverview">Preise & Leistungen</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ferienwohnungen <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Kleine Ferienwohnung</li>
+                    <li><a href="wohnung1" id="wohnung1" >Hier zur Ferienwohnung 1</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Mittlere Ferienwohnung</li>
+                    <li><a href="wohnung2">Hier zur Ferienwohnung 2</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Große Ferienwohnung</li>
+                    <li><a href="wohnung3">Hier zur Ferienwohnung 3</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="pricesOverview">Hier zur Übersicht</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right text-center">
+                  <a href="anfrage"><button class="btn btn-info navbar-btn">Unverbindliche Anfrage Starten</button></a>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+    </nav>
+<!-- end navbar-->
 
-        <!-- x>mobile eyecatcher -->
-        <div class="ismobile">
-            <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
-            <iframe src="https://360player.io/p/k6f7rb/" frameborder="0" width=100% height=315 allowfullscreen data-token="k6f7rb"></iframe>
+<!-- x>mobile eyecatcher -->
+    <div class="ismobile">
+        <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
+        <iframe src="https://360player.io/p/k6f7rb/" frameborder="0" width=100% height=315 allowfullscreen data-token="k6f7rb"></iframe>
+    </div>
+<!-- END x>mobile eyecatcher -->
+
+<!-- wohnungen beschreibung -->
+    <div class="jumbotron" style="margin-top: -1%;">
+        <div class="container">
+          <h1 class="display-3">Ferienwohnung 1</h1>
+             <p>
+                Ferienwohnung im 1. Obergeschoss
+             </p>
+             <p>
+              Die sonnige Wohnung befindet sich unter 5 min vom Strand und Supermarkt entfernt.
+              Sie ist modern eingerichtet, X Quadratmeter groß und mit Schlafzimmer, Küche, Bad 
+              und Wohnzimmer perfekt für bis zu 2 Personen.
+              Dazu besitzt sie eine Terasse mit Grill und Liegemöglichkeit sowie einen kostenlosen
+              Parkplatz.
+            </p>
+              <br/>
+            <ul>
+                <li style="display:inline-block;">
+                  <a class="btn btn-primary btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Hier zur Preisübersicht &raquo;</a>
+                </li>
+                <li style="display:inline-block;">
+                   <a class="btn btn-success btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Apartment unverbindlich anfragen &raquo;</a>
+                </li>
+            </ul>
         </div>
-        <!-- END x>mobile eyecatcher -->
+    </div>
+<!-- ENDE wohnungen beschreibung -->
 
-        <!-- wohnungen beschreibung -->
-        <div class="jumbotron" style="margin-top: -1%;">
-            <div class="container">
-              <h1 class="display-3">Ferienwohnung 1</h1>
-                 <p>
-                    Ferienwohnung im 1. Obergeschoss
+<!-- 360 pictures + description -->
+   <div class="how-section1">
+         <div class="row overviewBackground">
+             <div class="col-md-7 how-img removepadding">
+                 <img src="../images/wohnung1/wohnung1-küchenzeile.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
+             </div>
+             <div class="col-md-5">
+             <h4 class="overviewHeading">Wohnzimmerbereich Teil 1 Küche + Essbereich</h4>
+             <p class="text-muted overviewText">
+               Zusehen ist die Küche mit Essbereich.
+               Hier können sie in Ruhe kochen und im Wohnzimmerbereich um die Ecke zur Ruhe kommen.
+             </p>
+            <p>
+               <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
+            </p>
+             </div>
+         </div>
+         <div class="row overviewBackground">
+             <div class="col-md-6 how-img removepadding">
+                   <img src="../images/wohnung1/wohnung1-wohnzimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
+               </div>
+             <div class="col-md-6">
+                 <h4 class="overviewHeading">Wohnzimmerbereich Teil 2 Sofaecke</h4>
+                 <p class="text-muted overviewText">
+                  In der Sofaecke können sie sich erholen und nach einem Ereignissreichen Tag entspannen.
+                  Sie können gemütlich Filme auf dem TV gucken, Bücher lesen oder einfach mal zur Ruhe kommen.
+                 </p>
+                <p>
+                   <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
+                </p>
+             </div>
+         </div>
+         <div class="row overviewBackground">
+             <div class="col-md-6 how-img removepadding">
+                  <img src="../images/wohnung1/wohnung1-terrasse.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
+             </div>
+             <div class="col-md-6">
+                 <h4 class="overviewHeading">Terrasse im eignen Gartenbereich</h4>
+                 <p class="text-muted overviewText">
+                   Die Terrasse im eignen Gartenbereich bietet Erholung an der frischen Luft.
+                   Hier können sie auf einer Liege den Abend ausklinken lassen oder 
+                   den eigenen Grill anfeuern.
                  </p>
                  <p>
-                  Die sonnige Wohnung befindet sich unter 5 min vom Strand und Supermarkt entfernt.
-                  Sie ist modern eingerichtet, X Quadratmeter groß und mit Schlafzimmer, Küche, Bad 
-                  und Wohnzimmer perfekt für bis zu 2 Personen.
-                  Dazu besitzt sie eine Terasse mit Grill und Liegemöglichkeit sowie einen kostenlosen
-                  Parkplatz.
+                     <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
                 </p>
-                  <br/>
-                <ul>
-                    <li style="display:inline-block;">
-                      <a class="btn btn-primary btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Hier zur Preisübersicht &raquo;</a>
-                    </li>
-                    <li style="display:inline-block;">
-                       <a class="btn btn-success btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Apartment unverbindlich anfragen &raquo;</a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        <!-- ENDE wohnungen beschreibung -->
-
-        <!-- 360 pictures + description -->
-          <div class="how-section1">
-              <div class="row overviewBackground">
-                  <div class="col-md-7 how-img removepadding">
-                      <img src="../images/wohnung1/wohnung1-küchenzeile.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
-                  </div>
-                  <div class="col-md-5">
-                  <h4 class="overviewHeading">Wohnzimmerbereich Teil 1 Küche + Essbereich</h4>
-                  <p class="text-muted overviewText">
-                    Zusehen ist die Küche mit Essbereich.
-                    Hier können sie in Ruhe kochen und im Wohnzimmerbereich um die Ecke zur Ruhe kommen.
-                  </p>
+             </div>
+         </div>
+         <div class="row overviewBackground">
+             <div class="col-md-6 how-img removepadding">
+                   <img src="../images/wohnung1/wohnung1-schlafzimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
+               </div>
+             <div class="col-md-6">
+                 <h4 class="overviewHeading">Schlafzimmer</h4>
+                 <p class="text-muted overviewText">
+                   Das große Doppelbett mit einer Länge von 2m und einer Breite von 1,8m bietet eine 
+                   perfekte Grundlage für erholsame Nächte. Für die Perfekte Beleuchtung an den Nachtkästen
+                   ist ebenfalls gesorgt. Falls das Buch jedoch zu langweilig ist kann man aus dem Fenster
+                   über dem Bett den Sternenhimmel betrachten. Sollte man jedoch rechtzeitig schlafen müssen
+                   ist mit dem Rolo für einen erholsamen Schlaf gesorgt.
+                 </p>
+                 <p>
+                     <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
+                 </p>
+             </div>
+         </div>
+         <div class="row overviewBackground">
+             <div class="col-md-6 how-img removepadding">
+                  <img src="../images/wohnung1/wohnung1-badezimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
+             </div>
+             <div class="col-md-6">
+                 <h4 class="overviewHeading">Badezimmer</h4>
+                 <p class="text-muted overviewText">
+                   Das Badezimmer ist modern eingerichtet und verfügt über eine Dusche.
+                   Wie die gesamte Wohnung wird sie vor jedem Besuch grundgereinigt und ist stets sauber.
+                 </p>
                  <p>
                     <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
                  </p>
-                  </div>
-              </div>
-              <div class="row overviewBackground">
-                  <div class="col-md-6 how-img removepadding">
-                        <img src="../images/wohnung1/wohnung1-wohnzimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
-                    </div>
-                  <div class="col-md-6">
-                      <h4 class="overviewHeading">Wohnzimmerbereich Teil 2 Sofaecke</h4>
-                      <p class="text-muted overviewText">
-                       In der Sofaecke können sie sich erholen und nach einem Ereignissreichen Tag entspannen.
-                       Sie können gemütlich Filme auf dem TV gucken, Bücher lesen oder einfach mal zur Ruhe kommen.
-                      </p>
-                     <p>
-                        <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
-                     </p>
-                  </div>
-              </div>
-              <div class="row overviewBackground">
-                  <div class="col-md-6 how-img removepadding">
-                       <img src="../images/wohnung1/wohnung1-terrasse.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
-                  </div>
-                  <div class="col-md-6">
-                      <h4 class="overviewHeading">Terrasse im eignen Gartenbereich</h4>
-                      <p class="text-muted overviewText">
-                        Die Terrasse im eignen Gartenbereich bietet Erholung an der frischen Luft.
-                        Hier können sie auf einer Liege den Abend ausklinken lassen oder 
-                        den eigenen Grill anfeuern.
-                      </p>
-                      <p>
-                          <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
-                     </p>
-                  </div>
-              </div>
-              <div class="row overviewBackground">
-                  <div class="col-md-6 how-img removepadding">
-                        <img src="../images/wohnung1/wohnung1-schlafzimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
-                    </div>
-                  <div class="col-md-6">
-                      <h4 class="overviewHeading">Schlafzimmer</h4>
-                      <p class="text-muted overviewText">
-                        Das große Doppelbett mit einer Länge von 2m und einer Breite von 1,8m bietet eine 
-                        perfekte Grundlage für erholsame Nächte. Für die Perfekte Beleuchtung an den Nachtkästen
-                        ist ebenfalls gesorgt. Falls das Buch jedoch zu langweilig ist kann man aus dem Fenster
-                        über dem Bett den Sternenhimmel betrachten. Sollte man jedoch rechtzeitig schlafen müssen
-                        ist mit dem Rolo für einen erholsamen Schlaf gesorgt.
-                      </p>
-                      <p>
-                          <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
-                      </p>
-                  </div>
-              </div>
-              <div class="row overviewBackground">
-                  <div class="col-md-6 how-img removepadding">
-                       <img src="../images/wohnung1/wohnung1-badezimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
-                  </div>
-                  <div class="col-md-6">
-                      <h4 class="overviewHeading">Badezimmer</h4>
-                      <p class="text-muted overviewText">
-                        Das Badezimmer ist modern eingerichtet und verfügt über eine Dusche.
-                        Wie die gesamte Wohnung wird sie vor jedem Besuch grundgereinigt und ist stets sauber.
-                      </p>
-                      <p>
-                         <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
-                      </p>
-                  </div>
-              </div>
-              <div class="row overviewBackground">
-                  <div class="col-md-6 how-img removepadding">
-                        <img src="../images/umgebung/umgebung-weg.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
-                    </div>
-                  <div class="col-md-6">
-                      <h4 class="overviewHeading">Lage</h4>
-                      <p class="text-muted overviewText">
-                        Alle Wohnungen sind nur 5 min vom Strand und einem Supermarkt entfernt.
-                        Auch ein kostenloser Parkplatz ist direkt vor der Tür.
-                        </p>
-                        <p>
-                          <a href="https://goo.gl/maps/r9XbWeUaGJEufJjW6" target="_blank">
-                              <button type="button" class="btn btn-primary">Standort jetzt auf Google Maps öffnen</button>
-                          </a>
-                        </p>
-                  </div>
-              </div>
-          </div>
-        <!-- END 360 pictures + description -->
-
-        <!-- wohnungen beschreibung -->
-        <div class="section" style="background:#eee;" >
-            <div class="container">
-              <u><h3 class="display-3">Austattungsmerkmale</h3></u>
-                 <p>
-                     Das Apartment kommt mit folgender Ausstattung
-                 </p>
-                 <ul style="list-style-type: none;">
-                  <li>
+             </div>
+         </div>
+         <div class="row overviewBackground">
+             <div class="col-md-6 how-img removepadding">
+                   <img src="../images/umgebung/umgebung-weg.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
+               </div>
+             <div class="col-md-6">
+                 <h4 class="overviewHeading">Lage</h4>
+                 <p class="text-muted overviewText">
+                   Alle Wohnungen sind nur 5 min vom Strand und einem Supermarkt entfernt.
+                   Auch ein kostenloser Parkplatz ist direkt vor der Tür.
+                   </p>
+                   <p>
+                     <a href="https://goo.gl/maps/r9XbWeUaGJEufJjW6" target="_blank">
+                         <button type="button" class="btn btn-primary">Standort jetzt auf Google Maps öffnen</button>
+                     </a>
+                   </p>
+             </div>
+         </div>
+   </div>
+   <!-- END 360 pictures + description -->
+   
+<!-- wohnungen beschreibung -->
+    <div class="section" style="background:#eee;" >
+        <div class="container">
+          <u><h3 class="display-3">Austattungsmerkmale</h3></u>
+             <p>
+                 Das Apartment kommt mit folgender Ausstattung
+             </p>
+             <ul style="list-style-type: none;">
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                x Quadratmeter Wohnfläche + x Quadratmeter Terrasse
+              </li>
+                <li>
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  kostenloser Parkplatz
+                </li>
+                <li>
                     <i class="fa fa-check" aria-hidden="true"></i>
-                    x Quadratmeter Wohnfläche + x Quadratmeter Terrasse
-                  </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true"></i>
-                      kostenloser Parkplatz
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        TV + einige CDs und Bücher
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                         Codeschloss zum unabhängigen einchecken
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                         Trockner zur Mitbenutzung
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                         Waschmaschine zur Mitbenutzung
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                         Föhn im Badezimmer
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                         Küche
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                         Heizung
-                    </li>
-                    <li>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                         Rauchmelder + Kohlenmonoxiddetektor für ihre Sicherheit
-                    </li>
-                 </ul>
-                 <u><h3 class="display-3">Weitere Informationen</h3></u>
-                 <p>
-                    Folgende Informationen sollten sie zur Kenntnis nehmen:
-                </p>
-                <ul>
-                   <li>Bitte Bettwäsche und Handtücher mitbringen. Kann auf Wunsch auch über einen lokalen Dienstleister gemietet werden.</li>
-                   <li>das Apartment befindet sich unter 5km vom Strand entfernt</li>
-                   <li>
-                     Rezensionen des Apartment können sie bei <a href="https://www.airbnb.de/rooms/6984730?location=Friedrichskoog%2C%20Deutschland&adults=1&guests=1&s=UuDc3XRQ&check_in=2019-09-16&check_out=2019-09-22">AIRBNB</a> lesen<br/>
-                    </li>
-                   <li>Kurtaxe ist vor Ort zu bezahlen</li>
-                   <li>Mindestaufenthalt von 3 Nächten</li>
-                   <li>Der Preis versteht sich pro Übernachtung. Ob sie alleine oder zu zweit übernachten - Der Preis bleibt gleich.</li>
-                </ul>
+                    TV + einige CDs und Bücher
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                     Codeschloss zum unabhängigen einchecken
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                     Trockner zur Mitbenutzung
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                     Waschmaschine zur Mitbenutzung
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                     Föhn im Badezimmer
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                     Küche
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                     Heizung
+                </li>
+                <li>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                     Rauchmelder + Kohlenmonoxiddetektor für ihre Sicherheit
+                </li>
+             </ul>
+             <u><h3 class="display-3">Weitere Informationen</h3></u>
+             <p>
+                Folgende Informationen sollten sie zur Kenntnis nehmen:
+            </p>
+            <ul>
+               <li>Bitte Bettwäsche und Handtücher mitbringen. Kann auf Wunsch auch über einen lokalen Dienstleister gemietet werden.</li>
+               <li>das Apartment befindet sich unter 5km vom Strand entfernt</li>
+               <li>
+                 Rezensionen des Apartment können sie bei <a href="https://www.airbnb.de/rooms/6984730?location=Friedrichskoog%2C%20Deutschland&adults=1&guests=1&s=UuDc3XRQ&check_in=2019-09-16&check_out=2019-09-22">AIRBNB</a> lesen<br/>
+                </li>
+               <li>Kurtaxe ist vor Ort zu bezahlen</li>
+               <li>Mindestaufenthalt von 3 Nächten</li>
+               <li>Der Preis versteht sich pro Übernachtung. Ob sie alleine oder zu zweit übernachten - Der Preis bleibt gleich.</li>
+            </ul>
+        </div>
+    </div>
+<!-- ENDE wohnungen beschreibung -->
 
+<!-- Lage Google Maps -->
+    <div class="section" style="background:#eee;" >
+      <div class="container" style="margin: 2% 0 2% 0; padding: 0; width: 100%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2343.484729332051!2d8.873953151017854!3d54.02966693091142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b40a19d6fc6e43%3A0x3f4bca2b184260cd!2sSchulstra%C3%9Fe-West%2C+25718+Friedrichskoog!5e0!3m2!1sde!2sde!4v1556399661209!5m2!1sde!2sde" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+<!-- ENDE Lage Google Maps -->
+
+<!-- Footer -->
+    <footer class="container-fluid bg-grey py-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="row">
+                  <div class="col-md-6 ">
+                     <div class="logo-part">
+                        <h3>Bernd Biedrowski</h3>
+                        <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6 px-4">
+                     <h6> About Company</h6>
+                     <p>But horizontal lines can only be a full pixel high.</p>
+                     <a href="#" class="btn-footer"> More Info </a><br>
+                     <a href="#" class="btn-footer"> Contact Us</a>
+                  </div>
+               </div>
             </div>
-          </div>
-        <!-- ENDE wohnungen beschreibung -->
-
-        <!-- Lage Google Maps -->
-        <div class="section" style="background:#eee;" >
-            <div class="container" style="margin: 2% 0 2% 0; padding: 0; width: 100%;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2343.484729332051!2d8.873953151017854!3d54.02966693091142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b40a19d6fc6e43%3A0x3f4bca2b184260cd!2sSchulstra%C3%9Fe-West%2C+25718+Friedrichskoog!5e0!3m2!1sde!2sde!4v1556399661209!5m2!1sde!2sde" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+            <div class="col-md-6">
+               <div class="row">
+                  <div class="col-md-6 px-4">
+                     <h6> Help us</h6>
+                     <div class="row ">
+                        <div class="col-md-6">
+                           <ul>
+                              <li> <a href="#"> Home</a> </li>
+                              <li> <a href="#"> About</a> </li>
+                              <li> <a href="#"> Service</a> </li>
+                              <li> <a href="#"> Team</a> </li>
+                              <li> <a href="#"> Help</a> </li>
+                              <li> <a href="#"> Contact</a> </li>
+                           </ul>
+                        </div>
+                        <div class="col-md-6 px-4">
+                           <ul>
+                              <li> <a href="#"> Cab Faciliy</a> </li>
+                              <li> <a href="#"> Fax</a> </li>
+                              <li> <a href="#"> Terms</a> </li>
+                              <li> <a href="#"> Policy</a> </li>
+                              <li> <a href="#"> Refunds</a> </li>
+                              <li> <a href="#"> Paypal</a> </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 ">
+                     <h6>Jetzt auch hier buchen:</h6>
+                     <div class="social">
+                        <a href="#"><img alt="Airbnb" width="90" src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/Airbnb_New_Logo_2016.png" style="display: block; border: 0; color: #FF5A5F; font-size: 20px; font-weight: bold; font-family: sans-serif;" /></a>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        <!-- ENDE Lage Google Maps -->
-
-        <br/>
-
-             <!-- Footer -->
-             <footer class="container-fluid bg-grey py-5">
-                <div class="container">
-                   <div class="row">
-                      <div class="col-md-6">
-                         <div class="row">
-                            <div class="col-md-6 ">
-                               <div class="logo-part">
-                                  <h3>Bernd Biedrowski</h3>
-                                  <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
-                               </div>
-                            </div>
-                            <div class="col-md-6 px-4">
-                               <h6> About Company</h6>
-                               <p>But horizontal lines can only be a full pixel high.</p>
-                               <a href="#" class="btn-footer"> More Info </a><br>
-                               <a href="#" class="btn-footer"> Contact Us</a>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="col-md-6">
-                         <div class="row">
-                            <div class="col-md-6 px-4">
-                               <h6> Help us</h6>
-                               <div class="row ">
-                                  <div class="col-md-6">
-                                     <ul>
-                                        <li> <a href="#"> Home</a> </li>
-                                        <li> <a href="#"> About</a> </li>
-                                        <li> <a href="#"> Service</a> </li>
-                                        <li> <a href="#"> Team</a> </li>
-                                        <li> <a href="#"> Help</a> </li>
-                                        <li> <a href="#"> Contact</a> </li>
-                                     </ul>
-                                  </div>
-                                  <div class="col-md-6 px-4">
-                                     <ul>
-                                        <li> <a href="#"> Cab Faciliy</a> </li>
-                                        <li> <a href="#"> Fax</a> </li>
-                                        <li> <a href="#"> Terms</a> </li>
-                                        <li> <a href="#"> Policy</a> </li>
-                                        <li> <a href="#"> Refunds</a> </li>
-                                        <li> <a href="#"> Paypal</a> </li>
-                                     </ul>
-                                  </div>
-                               </div>
-                            </div>
-                            <div class="col-md-6 ">
-                               <h6>Jetzt auch hier buchen:</h6>
-                               <div class="social">
-                                  <a href="#"><img alt="Airbnb" width="90" src="http://image.airbnbmail.com/lib/fe8d1273706c037e77/m/2/Airbnb_New_Logo_2016.png" style="display: block; border: 0; color: #FF5A5F; font-size: 20px; font-weight: bold; font-family: sans-serif;" /></a>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                </footer>
-                <!-- End Footer-->
-
-                <script src="../js/lightbox.js"></script>
-                <script src="../js/banner.js"></script>
-          </body>
+         </div>
+      </div>
+    </footer>
+<!-- End Footer  -->
+    <!-- START javascript -->
+    <script src="../js/lightbox.js"></script>
+    <!-- END javascript-->
+                
+  </body>
 </html>
