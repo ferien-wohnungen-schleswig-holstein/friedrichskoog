@@ -1,116 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <!-- to define how the app should function/look like-->
-      <link rel="manifest" href="../../config/mobile/manifest.json">
-      <!-- launch fullscreen on mobile -->
-      <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="mobile-web-app-capable" content="yes">
-        <!-- viewport for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- link font awesome-->
-      <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <!-- parrallax css -->
-        <link rel="stylesheet" href="../css/parallax.css" >
-         <!-- little css tweaks -->
-         <link rel="stylesheet" href="../css/littleTweaks.css" >
-        <!-- footer css-->
-        <link rel="stylesheet" href="../css/footer.css" >
-        <!-- airbnb-banner css-->
-        <link rel="stylesheet" href="../css/banner.css" >
-        <!-- wohnungsbeschreibung css-->
-        <link rel="stylesheet" href="../css/wohnungenbeschreibung.css" >
-        <!-- quote carousel css-->
-        <link rel="stylesheet" href="../css/quotecarousel.css">
-        <!-- Wohnungen + Text Übersicht Section-->
-        <link rel="stylesheet" href="../css/wohnungenuebersicht.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-
-<!-- Static navbar -->
-<nav class="navbar navbar-default" style="margin-bottom: 0">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Ferienwohnungen Friedrichskoog</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/">Home</a></li>
-              <li><a href="pricesOverview">Preise & Leistungen</a></li>
-              <li><a href="#">Kontakt</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ferienwohnungen <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-header">Kleine Ferienwohnung</li>
-                  <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/wohnung1.html" id="wohnung1" >Hier zur Ferienwohnung 1</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Mittlere Ferienwohnung</li>
-                  <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/wohnung2.html">Hier zur Ferienwohnung 2</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Große Ferienwohnung</li>
-                  <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/wohnung3.html">Hier zur Ferienwohnung 3</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/#overviewPrices">Hier zur Übersicht</a></li>
+  <head>
+    <!-- launch fullscreen on mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- viewport for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link font awesome-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- parrallax css -->
+    <link rel="stylesheet" href="../css/parallax.css" >
+    <!-- little css tweaks -->
+    <link rel="stylesheet" href="../css/littleTweaks.css" >
+    <!-- footer css-->
+    <link rel="stylesheet" href="../css/footer.css" >
+    <!-- airbnb-banner css-->
+    <link rel="stylesheet" href="../css/banner.css" >
+    <!-- wohnungsbeschreibung css-->
+    <link rel="stylesheet" href="../css/wohnungenbeschreibung.css" >
+    <!-- quote carousel css-->
+    <link rel="stylesheet" href="../css/quotecarousel.css">
+    <!-- Wohnungen + Text Übersicht Section-->
+    <link rel="stylesheet" href="../css/wohnungenuebersicht.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" style="margin-bottom: 0">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Ferienwohnungen Friedrichskoog</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/">Home</a></li>
+                  <li><a href="pricesOverview">Preise & Leistungen</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ferienwohnungen <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-header">Kleine Ferienwohnung</li>
+                      <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/wohnung1.html" id="wohnung1" >Hier zur Ferienwohnung 1</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Mittlere Ferienwohnung</li>
+                      <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/wohnung2.html">Hier zur Ferienwohnung 2</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Große Ferienwohnung</li>
+                      <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/wohnung3.html">Hier zur Ferienwohnung 3</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/#overviewPrices">Hier zur Übersicht</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <a href="anfrage"><button class="btn btn-info navbar-btn">Unverbindliche Anfrage Starten</button></a>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+      </nav>
+    <!-- end navbar-->
+    
+    <!-- x>mobile eyecatcher -->
+      <div class="ismobile">
+          <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
+          <iframe src="https://360player.io/p/k6f7rb/" frameborder="0" width=100% height=315 allowfullscreen data-token="k6f7rb"></iframe>
+      </div>
+    <!-- END x>mobile eyecatcher -->
+    
+    <!-- wohnungen beschreibung -->
+      <div class="jumbotron" style="margin-top: -1%;">
+        <div class="container">
+          <h1 class="display-3">WOHNUNG 3</h1>
+             <p>
+                 Helle Wohnung im 1. Obergeschoss
+             </p>
+             <p>
+              Die sonnige Wohnung befindet sich unter 5 min vom Strand und Supermarkt entfernt.
+              Sie ist modern eingerichtet und mit 2 Betten (0,90m x 2m)
+              in einer Schlafecke, Bad, Küche und Wohnzimmer perfekt eingerichtet für bis 
+              zu 2 Personen.
+              Dazu besitzt sie im eigenen Garten eine Terrasse mit Grill und Liegemöglichkeit, sowie
+              einen kostenlosen Parkplatz direkt vor der Haustür.
+             </p>
+              <br/>
+            <ul>
+                <li style="display:inline-block;">
+                  <a class="btn btn-primary btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Hier zur Preisübersicht &raquo;</a>
+                </li>
+                <li style="display:inline-block;">
+                   <a class="btn btn-success btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Apartment unverbindlich anfragen &raquo;</a>
+                </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right text-center">
-                <a href="anfrage"><button class="btn btn-info navbar-btn">Unverbindliche Anfrage Starten</button></a>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-  </nav>
-<!-- end navbar-->
-
-        <!-- x>mobile eyecatcher -->
-        <div class="ismobile">
-            <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
-            <iframe src="https://360player.io/p/k6f7rb/" frameborder="0" width=100% height=315 allowfullscreen data-token="k6f7rb"></iframe>
         </div>
-        <!-- END x>mobile eyecatcher -->
-
-        <!-- wohnungen beschreibung -->
-        <div class="jumbotron" style="margin-top: -1%;">
-            <div class="container">
-              <h1 class="display-3">WOHNUNG 3</h1>
-                 <p>
-                     Helle Wohnung im 1. Obergeschoss
-                 </p>
-                 <p>
-                  Die sonnige Wohnung befindet sich unter 5 min vom Strand und Supermarkt entfernt.
-                  Sie ist modern eingerichtet und mit 2 Betten (0,90m x 2m)
-                  in einer Schlafecke, Bad, Küche und Wohnzimmer perfekt eingerichtet für bis 
-                  zu 2 Personen.
-                  Dazu besitzt sie im eigenen Garten eine Terrasse mit Grill und Liegemöglichkeit, sowie
-                  einen kostenlosen Parkplatz direkt vor der Haustür.
-                 </p>
-                  <br/>
-                <ul>
-                    <li style="display:inline-block;">
-                      <a class="btn btn-primary btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Hier zur Preisübersicht &raquo;</a>
-                    </li>
-                    <li style="display:inline-block;">
-                       <a class="btn btn-success btn-lg" href="#" role="button" style="text-decoration: none; margin: 10px;">Apartment unverbindlich anfragen &raquo;</a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        <!-- ENDE wohnungen beschreibung -->
-
-        <!-- 360 pictures + description -->
-          <div class="how-section1">
+      </div>
+    <!-- ENDE wohnungen beschreibung -->
+    
+    <!-- 360 pictures + description -->
+      <div class="how-section1">
               <div class="row overviewBackground">
                   <div class="col-md-7 how-img removepadding">
                       <img src="../images/wohnung3/wohnung3-overview.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
@@ -191,11 +189,11 @@
                         </p>
                   </div>
               </div>
-          </div>
-        <!-- END 360 pictures + description -->
-        
-        <!-- wohnungen beschreibung -->
-        <div class="section" style="background:#eee;" >
+      </div>
+    <!-- END 360 pictures + description -->
+            
+    <!-- wohnungen beschreibung -->
+      <div class="section" style="background:#eee;" >
             <div class="container">
               <u><h3 class="display-3">Austattungsmerkmale</h3></u>
                  <p>
@@ -268,19 +266,19 @@
                 </ul>
 
             </div>
-          </div>
-        <!-- ENDE wohnungen beschreibung -->
-
-      <!-- Lage Google Maps -->
-      <div class="section" style="background:#eee;" >
-          <div class="container" style="margin: 2% 0 2% 0; padding: 0; width: 100%;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2343.484729332051!2d8.873953151017854!3d54.02966693091142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b40a19d6fc6e43%3A0x3f4bca2b184260cd!2sSchulstra%C3%9Fe-West%2C+25718+Friedrichskoog!5e0!3m2!1sde!2sde!4v1556399661209!5m2!1sde!2sde" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
-          </div>
       </div>
-      <!-- ENDE Lage Google Maps -->
-
-             <!-- Footer -->
-             <footer class="container-fluid bg-grey py-5">
+    <!-- ENDE wohnungen beschreibung -->
+    
+    <!-- Lage Google Maps -->
+      <div class="section" style="background:#eee;" >
+    <div class="container" style="margin: 2% 0 2% 0; padding: 0; width: 100%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2343.484729332051!2d8.873953151017854!3d54.02966693091142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b40a19d6fc6e43%3A0x3f4bca2b184260cd!2sSchulstra%C3%9Fe-West%2C+25718+Friedrichskoog!5e0!3m2!1sde!2sde!4v1556399661209!5m2!1sde!2sde" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+    </div>
+      </div>
+    <!-- ENDE Lage Google Maps -->
+    
+    <!-- Footer -->
+      <footer class="container-fluid bg-grey py-5">
                 <div class="container">
                    <div class="row">
                       <div class="col-md-6">
@@ -336,7 +334,7 @@
                       </div>
                    </div>
                 </div>
-                </footer>
-                <!-- End Footer-->
-          </body>
+      </footer>
+    <!-- End Footer-->
+  </body>
 </html>
