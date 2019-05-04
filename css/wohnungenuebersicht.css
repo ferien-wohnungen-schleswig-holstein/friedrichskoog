@@ -1,0 +1,74 @@
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}
+
+.wohnungsbilduebersicht{
+    height: 50% !important;
+    width: 100% !important;
+}
+
+.removepadding{
+    padding: 0 !important;
+}
+.overviewBackground{
+    background-color: whitesmoke !important;
+    border: 1px solid #ccc!important;
+    border-radius:16px;
+}
+*{
+    font-family: 'Playfair Display', serif !important;
+}
+button.btn.btn-primary{
+    margin-top: 5%;
+    font-size: 150% !important;
+}
+img.img-fluid.wohnungsbilduebersicht
+{
+    border-radius:16px;
+}
+h2.section-title.mb-2.h1.text-center.overviewTitle{
+    font-size: 500% !important;
+}
+.overviewHeading{
+    font-size: 350% !important;
+}
+.headingWohnung1{
+    color: #ad9624 !important;
+}
+.headingWohnung2{
+    color: rgb(81, 117, 153) !important;
+}
+.headingWohnung3{
+    color: rgb(162 ,55 ,35) !important;
+}
+.headingLage{
+    color: rgb(241, 144, 84) !important;
+}
+.sectionBackground{
+    background: #d3d3d300 !important;
+}
+.overviewText{
+    color: black !important;
+    font-size: 150%;
+}

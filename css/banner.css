@@ -1,0 +1,17 @@
+#gradient{
+   background: grey;
+   width: 100%;
+   padding: 2%;
+   text-align: center;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+.airbnblink{
+   font-size: 2em;
+   font-style: italic;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: white; 
+}
+.airbnblink:hover{
+   text-decoration:none;
+}
