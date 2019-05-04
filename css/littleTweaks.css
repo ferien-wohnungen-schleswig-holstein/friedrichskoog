@@ -1,3 +1,7 @@
 body{
     background-color: #eee!important;
 }
+.overviewPricesText{
+    font-size: 50%;
+    font-color: grey;
+}
