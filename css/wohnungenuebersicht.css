@@ -72,3 +72,51 @@ h2.section-title.mb-2.h1.text-center.overviewTitle{
     color: black !important;
     font-size: 150%;
 }
+/* Wohnung 1 Headings */
+.wohnung1Heading1{
+    color: #6081a0;
+}
+.wohnung1Heading2{
+    color: #eaae4c;
+}
+.wohnung1Heading3{
+    color: #748d4f;
+}
+.wohnung1Heading4{
+    color: #d93f2c;
+}
+.wohnung1Heading5{
+    color: #848988;
+}
+.wohnungLage{
+    color: #44463e;
+}
+/* Wohnung 2 Headings */
+.wohnung2Heading1{
+    color: #517399;
+}
+.wohnung2Heading2{
+    color: #a97b69;
+}
+.wohnung2Heading3{
+    color: #39352c;
+}
+.wohnung2Heading4{
+    color: #c7444a;
+}
+.wohnung2Heading5{
+    color: #19181f;
+}
+/* Wohnung 3 Headings */
+.wohnung3Heading1{
+    color: #7586b1;
+}
+.wohnung3Heading2{
+    color: #748d4f;
+}
+.wohnung3Heading3{
+    color: #d23d2a;
+}
+.wohnung3Heading4{
+    color: #959381;
+}
