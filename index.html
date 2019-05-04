@@ -345,6 +345,15 @@
   
   <!-- Javascript -->
   <script src="./js/parallax.js"></script><!-- parallax JS-->
+  <script>
+    $(window).scroll(function () { 
+
+$('.twit-bird').css({
+  'top' : -($(this).scrollTop()/6)+"px"
+}); 
+
+});
+  </script>
   <!-- END Javascript-->
   
   </body>
