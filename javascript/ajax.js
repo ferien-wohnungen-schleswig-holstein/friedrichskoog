@@ -22,3 +22,4 @@ function removeFallbackLink(elementId){
     var element = document.getElementById(elementId);
     element.removeAttribute("href");
 }
+*/
