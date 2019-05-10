@@ -345,11 +345,11 @@
 
     <script>
       function ajax(elementId){
-        console.log(elementId);
+        alert(elementId);
   var resourceName = elementId;
   var route = 'https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/ajax';
   var ajaxRoute = route.concat(resourceName);
-  console.log(ajaxRoute);
+  alert(ajaxRoute);
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -357,6 +357,7 @@
       console.log(this.responseText);
       document.getElementById(elementId).innerHTML =
       this.responseText;
+      alert(rhis.responseText);
     }
   };
   xhttp.open("GET", ajaxRoute, true);
