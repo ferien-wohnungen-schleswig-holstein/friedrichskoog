@@ -113,7 +113,7 @@
 <!-- 360 pictures + description -->
    <div class="how-section1">
          <div class="row overviewBackground">
-             <div class="col-md-7 how-img removepadding" id="/wohnung1/picture1.html">
+             <div class="col-md-7 how-img removepadding" id="/wohnung1/360küchenzeile.html">
                  <img src="../images/wohnung1/wohnung1-küchenzeile.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
              </div>
              <div class="col-md-5">
@@ -123,12 +123,12 @@
                Hier können sie in Ruhe kochen und im Wohnzimmer um die Ecke zur Ruhe kommen.
              </p>
             <p>
-               <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/picture1.html')">360 Grad Bild anschauen</button>
+               <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/360küchenzeile.html')">360 Grad Bild anschauen</button>
             </p>
              </div>
          </div>
          <div class="row overviewBackground">
-             <div class="col-md-6 how-img removepadding">
+             <div class="col-md-6 how-img removepadding" id="/wohnung1/360wohnzimmer.html">
                    <img src="../images/wohnung1/wohnung1-wohnzimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
                </div>
              <div class="col-md-6">
@@ -138,12 +138,12 @@
                   Sie können gemütlich Filme auf dem TV gucken, Bücher lesen oder einfach mal zur Ruhe kommen.
                  </p>
                 <p>
-                   <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
+                   <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/360wohnzimmer.html')">360 Grad Bild anschauen</button>
                 </p>
              </div>
          </div>
          <div class="row overviewBackground">
-             <div class="col-md-6 how-img removepadding">
+             <div class="col-md-6 how-img removepadding" id="/wohnung1/360terrasse.html">
                   <img src="../images/wohnung1/wohnung1-terrasse.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
              </div>
              <div class="col-md-6">
@@ -154,12 +154,12 @@
                    den eigenen Grill anfeuern.
                  </p>
                  <p>
-                     <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
+                     <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/360terrasse.html')">360 Grad Bild anschauen</button>
                 </p>
              </div>
          </div>
          <div class="row overviewBackground">
-             <div class="col-md-6 how-img removepadding">
+             <div class="col-md-6 how-img removepadding" id="/wohnung1/360schlafzimmer.html">
                    <img src="../images/wohnung1/wohnung1-schlafzimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
                </div>
              <div class="col-md-6">
@@ -172,12 +172,12 @@
                    ist mit dem Rolo für einen erholsamen Schlaf gesorgt.
                  </p>
                  <p>
-                     <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
+                     <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/360schlafzimmer.html')">360 Grad Bild anschauen</button>
                  </p>
              </div>
          </div>
          <div class="row overviewBackground">
-             <div class="col-md-6 how-img removepadding">
+             <div class="col-md-6 how-img removepadding" id="/wohnung1/360badezimmer.html">
                   <img src="../images/wohnung1/wohnung1-badezimmer.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
              </div>
              <div class="col-md-6">
@@ -187,12 +187,12 @@
                    Wie die gesamte Wohnung wird sie vor jedem Besuch grundgereinigt und ist stets sauber.
                  </p>
                  <p>
-                    <button type="button" class="btn btn-primary">360 Grad Bild anschauen</button>
+                    <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/360badezimmer.html')">360 Grad Bild anschauen</button>
                  </p>
              </div>
          </div>
          <div class="row overviewBackground">
-             <div class="col-md-6 how-img removepadding">
+             <div class="col-md-6 how-img removepadding" id="/wohnung1/360umgebung.html">
                    <img src="../images/umgebung/umgebung-weg.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
                </div>
              <div class="col-md-6">
@@ -201,6 +201,9 @@
                    Alle Wohnungen sind nur 5 min vom Strand und einem Supermarkt entfernt.
                    Auch ein kostenloser Parkplatz ist direkt vor der Tür.
                    </p>
+                   <p>
+                    <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/360umgebung.html')">360 Grad Bild anschauen</button>
+                  </p>
                    <p>
                       <a href="https://goo.gl/maps/2TDjoSByeW84eYyp8" target="_blank">
                           <button type="button" class="btn btn-primary">Standort jetzt auf Google Maps öffnen</button>
@@ -348,15 +351,12 @@
   var resourceName = elementId;
   var route = 'https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/ajax';
   var ajaxRoute = route.concat(resourceName);
-  alert(ajaxRoute);
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById(elementId).innerHTML =
       this.responseText;
-      alert(rhis.responseText);
-      alert(document.getElementById(elementId).innerHTML);
     }
   };
   xhttp.open("GET", ajaxRoute, true);
