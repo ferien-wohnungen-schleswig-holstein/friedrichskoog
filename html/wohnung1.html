@@ -113,7 +113,7 @@
 <!-- 360 pictures + description -->
    <div class="how-section1">
          <div class="row overviewBackground">
-             <div class="col-md-7 how-img removepadding" id="test360">
+             <div class="col-md-7 how-img removepadding" id="/wohnung1/picture1.html">
                  <img src="../images/wohnung1/wohnung1-küchenzeile.jpg" class="img-fluid wohnungsbilduebersicht" alt=""/>
              </div>
              <div class="col-md-5">
@@ -123,7 +123,7 @@
                Hier können sie in Ruhe kochen und im Wohnzimmer um die Ecke zur Ruhe kommen.
              </p>
             <p>
-               <button type="button" class="btn btn-primary" onclick="ajax360('test360','/wohnung1/picture1.html')">360 Grad Bild anschauen</button>
+               <button type="button" class="btn btn-primary" onclick="ajax360('/wohnung1/picture1.html')">360 Grad Bild anschauen</button>
             </p>
              </div>
          </div>
@@ -344,8 +344,8 @@
     <script src="../resources/bootstrap/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
     <script>
-      function ajax360(elementId, resourceName){
-        alert(elementId);
+      function ajax360(elementId){
+  var resourceName = elementId;
   var route = 'https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/ajax';
   var ajaxRoute = route.concat(resourceName);
   alert(ajaxRoute);
