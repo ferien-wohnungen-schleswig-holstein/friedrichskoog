@@ -114,7 +114,7 @@
    <div class="how-section1">
          <div class="row overviewBackground">
              <div class="col-md-7 how-img removepadding">
-                 <img src="../images/wohnung1/wohnung1-küchenzeile.jpg" class="img-fluid wohnungsbilduebersicht" id="/wohnung1/picture1.html" alt=""/>
+                 <img src="../images/wohnung1/wohnung1-küchenzeile.jpg" class="img-fluid wohnungsbilduebersicht" id="test360" alt=""/>
              </div>
              <div class="col-md-5">
              <h4 class="overviewHeading wohnung1Heading1">Wohnzimmer <br>Teil 1</h4>
@@ -123,7 +123,7 @@
                Hier können sie in Ruhe kochen und im Wohnzimmer um die Ecke zur Ruhe kommen.
              </p>
             <p>
-               <button type="button" class="btn btn-primary" onclick="ajax('/wohnung1/picture1.html')">360 Grad Bild anschauen</button>
+               <button type="button" class="btn btn-primary" onclick="ajax360('test360','/wohnung1/picture1.html')">360 Grad Bild anschauen</button>
             </p>
              </div>
          </div>
@@ -344,9 +344,8 @@
     <script src="../resources/bootstrap/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
     <script>
-      function ajax(elementId){
+      function ajax360(elementId, resourceName){
         alert(elementId);
-  var resourceName = elementId;
   var route = 'https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/ajax';
   var ajaxRoute = route.concat(resourceName);
   alert(ajaxRoute);
