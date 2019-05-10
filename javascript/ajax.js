@@ -1,6 +1,6 @@
-function ajax(elementId){
+function ajax360(elementId){
   var resourceName = elementId;
-  var route = 'https://github.com/ferien-wohnungen-schleswig-holstein/friedrichskoog/tree/master/html/ajax';
+  var route = 'https://ferien-wohnungen-schleswig-holstein.github.io/friedrichskoog/html/ajax';
   var ajaxRoute = route.concat(resourceName);
 
   var xhttp = new XMLHttpRequest();
