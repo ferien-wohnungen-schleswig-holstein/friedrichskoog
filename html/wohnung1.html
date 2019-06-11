@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="../css/quotecarousel.css">
     <!-- Wohnungen + Text Übersicht Section-->
     <link rel="stylesheet" href="../css/wohnungenuebersicht.css">
+    <!-- Wohnungsübersicht mobile -->
+    <link rel="stylesheet" href="../css/mobileWohnungsuebersicht.css">
   </head>
   <body>
 
@@ -215,274 +217,359 @@
    <!-- END 360 pictures + description -->
  
 <!-- wohnungen beschreibung -->
-    <div class="section" style="background:#eee;" >
-        <div class="container">
-          <u><h3 class="display-3">Austattungsmerkmale</h3></u>
-             <p>
-                 Das Apartment kommt mit folgender Ausstattung
-             </p>
-             <ul style="list-style-type: none;">
-              <li>
-                <i class="fa fa-check" aria-hidden="true"></i>
-                x Quadratmeter Wohnfläche + x Quadratmeter Terrasse
-              </li>
-                <li>
-                  <i class="fa fa-check" aria-hidden="true"></i>
-                  kostenloser Parkplatz
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    TV + einige CDs und Bücher
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                     Codeschloss zum unabhängigen einchecken
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                     Trockner zur Mitbenutzung
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                     Waschmaschine zur Mitbenutzung
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                     Föhn im Badezimmer
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                     Küche
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                     Heizung
-                </li>
-                <li>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                     Rauchmelder + Kohlenmonoxiddetektor für ihre Sicherheit
-                </li>
-             </ul>
-             <u><h3 class="display-3">Weitere Informationen</h3></u>
-             <p>
-                Folgende Informationen sollten sie zur Kenntnis nehmen:
+<div class="ismobile"><!-- Wohnung Beschreibung for Desktop -->
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/wohnfläche.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                      x Quadratmeter Wohnfläche<br>
+                      + x Quadratmeter Terrasse
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/parking.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                      Einem kostenlosen Parkplatz direkt vor der Haustür
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/tvAndBooks.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                      Einem Fernseher sowie einige CDs und Bücher
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/checkIn.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                     Codeschloss zum unabhängigen einchecken.
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/trockner.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                      Trockner und Waschmaschine zur Mitbenutzung
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/föhn.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                      Föhn sowie weitere Utensilien im Badezimmer
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/kochen.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                      Küche mit gebräuchlichen Gewürzen zum Kochen
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/heizung.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 400%;">
+                      eigene Heizung
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 10% 10% 10% 10%;">
+        <div class="col-md-12 text-center"> 
+            <div class="icon-box">
+                  <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
+                   border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-top: 1px solid black;
+                  ">
+                        <img src="../images/icons/rauchmelder.svg" alt="" width="20%" height="20%" class="animateHidden">
+                  </div>
+                  <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
+                  border-left: 1px solid black;
+                  border-right: 1px solid black;
+                  border-bottom: 1px solid black;
+                  ">
+                  <h3 style="font-size: 350%;">
+                      Rauchmelder + Kohlenmonoxiddetektor<br> für ihre Sicherheit
+                  </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End Desktop -->
+
+<!-- START mobile version wohnungsbeschreibung -->
+<div class="container wohnungBeschreibungMobile">
+    <div class="row">
+          <!-- Boxes de Acoes -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="box">							
+          <div class="icon">
+            <div class="image"><img src="../images/icons/wohnfläche.svg" alt="" width="75%" height="75%"></div>
+            <div class="info">
+              <h3 class="title">Wohnfläche</h3>
+              <p>
+                  x Quadratmeter Wohnfläche + x Quadratmeter Terrasse.
+              </p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div> 
+      </div>
+        
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="box">							
+          <div class="icon">
+            <div class="image"><img src="../images/icons/parking.svg" alt="" width="75%" height="75%"></div>
+            <div class="info">
+              <h3 class="title">Parkplatz</h3>
+                <p>
+                    Ein kostenloser Parkplatz direkt vor der Haustür steht ihnen zur Verfügung.
+              </p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div> 
+      </div>
+        
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="box">							
+          <div class="icon">
+            <div class="image"><img src="../images/icons/tvAndBooks.svg" alt="" width="75%" height="75%"></div>
+            <div class="info">
+              <h3 class="title">Ausstattung</h3>
+                <p>
+                Ein Fernseher, CDs sowie Bücher sind für die Gestaltung der abendliche Entspannung vorhanden.
+              </p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div> 
+      </div>		    
+    </div><!-- END Row-->
+
+    <div class="row">
+        <!-- Boxes de Acoes -->
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">							
+        <div class="icon">
+          <div class="image"><img src="../images/icons/checkIn.svg" alt="" width="75%" height="75%"></div>
+          <div class="info">
+            <h3 class="title">Checkin</h3>
+            <p>
+                Ein Codeschloss zum unabhängigen einchecken ist angebracht.
+                So können sie jederzeit selbstständig einchecken.
             </p>
-            <ul>
-               <li>Bitte Bettwäsche und Handtücher mitbringen. Kann auf Wunsch auch über einen lokalen Dienstleister gemietet werden.</li>
-               <li>das Apartment befindet sich unter 5km vom Strand entfernt</li>
-               <li>
-                 Rezensionen des Apartment können sie bei <a href="https://www.airbnb.de/rooms/6984730?location=Friedrichskoog%2C%20Deutschland&adults=1&guests=1&s=UuDc3XRQ&check_in=2019-09-16&check_out=2019-09-22">AIRBNB</a> lesen<br/>
-                </li>
-               <li>Kurtaxe ist vor Ort zu bezahlen</li>
-               <li>Mindestaufenthalt von 3 Nächten</li>
-               <li>Der Preis versteht sich pro Übernachtung. Ob sie alleine oder zu zweit übernachten - Der Preis bleibt gleich.</li>
-            </ul>
+          </div>
         </div>
+        <div class="space"></div>
+      </div> 
     </div>
+      
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">							
+        <div class="icon">
+          <div class="image"><img src="../images/icons/trockner.svg" alt="" width="75%" height="75%"></div>
+          <div class="info">
+            <h3 class="title">Wäsche</h3>
+              <p>
+                  Ein Trockner sowie eine Waschmaschine stehen ihnen zur Mitbenutzung zur Verfügung.
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>
+      
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+      <div class="box">							
+        <div class="icon">
+          <div class="image"><img src="../images/icons/föhn.svg" alt="" width="75%" height="75%"></div>
+          <div class="info">
+            <h3 class="title">Badezimmerutensilien</h3>
+              <p>
+              Ein Föhn sowie weitere gängige Badezimmerutensilien sind vorhanden.
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>		    
+  </div><!-- END Row-->
+
+  <div class="row">
+      <!-- Boxes de Acoes -->
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+    <div class="box">							
+      <div class="icon">
+        <div class="image"><img src="../images/icons/kochen.svg" alt="" width="75%" height="75%"></div>
+        <div class="info">
+          <h3 class="title">Kochen</h3>
+          <p>
+              Eine Küche steht in ihrer Wohnung zur freien Verfügung. Gängige Gewürze sind ebenfalls vorhanden.
+          </p>
+        </div>
+      </div>
+      <div class="space"></div>
+    </div> 
+  </div>
+ 
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+    <div class="box">							
+      <div class="icon">
+        <div class="image"><img src="../images/icons/heizung.svg" alt="" width="60%" height="60%"></div>
+        <div class="info">
+          <h3 class="title">Heizung</h3>
+            <p>
+                Heizkörper sind in der Wohnung vorhanden und können jederzeit selber eingestellt werden.
+          </p>
+        </div>
+      </div>
+      <div class="space"></div>
+    </div> 
+  </div>
+    
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+    <div class="box">							
+      <div class="icon">
+        <div class="image"><img src="../images/icons/rauchmelder.svg" alt="" width="75%" height="75%"></div>
+        <div class="info">
+          <h3 class="title">Rauchmelder</h3>
+            <p>
+                Ihre Sicherheit liegt uns am Herzen.
+                Ein Rauchmelder + Kohlenmonoxiddetektor sind für ihre Sicherheit in der Wohnung angebracht.
+          </p>
+        </div>
+      </div>
+      <div class="space"></div>
+    </div> 
+  </div>		    
+</div><!-- END Row-->
+  
+  </div>
+<!-- END mobile version wohnungsbeschreibung -->
 <!-- ENDE wohnungen beschreibung -->
-
-<br> <br> <br>
-<br> <br> <br>
-
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/wohnfläche.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                  x Quadratmeter Wohnfläche<br>
-                  + x Quadratmeter Terrasse
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/parking.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                  Einem kostenlosen Parkplatz direkt vor der Haustür
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/tvAndBooks.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                  Einem Fernseher sowie einige CDs und Bücher
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/checkIn.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                 Codeschloss zum unabhängigen einchecken.
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/trockner.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                  Trockner und Waschmaschine zur Mitbenutzung
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/föhn.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                  Föhn sowie weitere Utensilien im Badezimmer
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/kochen.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                  Küche mit gebräuchlichen Gewürzen zum Kochen
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/heizung.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 400%;">
-                  eigene Heizung
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" style="padding: 10% 10% 10% 10%;">
-    <div class="col-md-12 text-center"> 
-        <div class="icon-box">
-              <div class="icon-md" style="background-color: #eeeeee; border-radius: 70% 70% 0 0; padding: 3%;
-               border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-top: 1px solid black;
-              ">
-                    <img src="../images/icons/rauchmelder.svg" alt="" width="20%" height="20%">
-              </div>
-              <div style="margin-top: 0; padding: 3%; background-color: #f5f5f5;
-              border-left: 1px solid black;
-              border-right: 1px solid black;
-              border-bottom: 1px solid black;
-              ">
-              <h3 style="font-size: 350%;">
-                  Rauchmelder + Kohlenmonoxiddetektor<br> für ihre Sicherheit
-              </h3>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
@@ -557,6 +644,9 @@
 <!-- START Javascript-->    
     <script src="../javascript/ajax.js"></script><!-- ajax 360 picture-->
 <!-- END Javascript-->
+
+<script src="../javascript/imageAnimation.js">
+</script>
 
   </body>
 </html>

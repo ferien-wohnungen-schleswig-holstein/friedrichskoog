@@ -8,3 +8,31 @@ body{
 h2.section-title.mb-2.h1.text-center{
     font-size: 500% !important;
 }
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  .animate {
+    animation: imageAnimation 500ms ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 1;
+  }
+  .animateHidden{
+      opacity: 0;
+  }
+  @media screen and (min-width: 0px) and (max-width: 786px) {
+      .wohnungBeschreibungMobile{
+          display:block;
+      }
+  }
+  @media screen and (min-width: 787px) {
+    .wohnungBeschreibungMobile{
+        display:none;
+    }
+}
