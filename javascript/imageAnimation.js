@@ -14,7 +14,7 @@ var animateHTML = function() {
     function checkPosition() {
       for (var i = 0; i < elems.length; i++) {
         var positionFromTop = elems[i].getBoundingClientRect().top;
-        if (positionFromTop - windowHeight <= -380) {
+        if (positionFromTop - windowHeight <= -350) {
           elems[i].className = elems[i].className.replace(
             'animateHidden',
             'animate'
