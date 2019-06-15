@@ -39,3 +39,7 @@ h2.section-title.mb-2.h1.text-center{
         display:none;
     }
 }
+a:hover{
+    background-color: #5bc0de!important;
+    border: none;
+}
