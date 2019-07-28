@@ -23,6 +23,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- bootstrap min js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="theme-color" content="#FFE1C4">
   </head>
   <body>
   
@@ -371,6 +375,23 @@ $('.twit-bird').css({
     alert(  "Diese Website befindet sich noch in der Entwicklung."+
       "Datenschutzerklärung, Impressum, 360 Grad Bilder sowie einige Verbesserungen folgen noch!");
   </script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDuDGcpHGU-Sx1Hla3wYwZvXbjeKpHqPjA",
+      authDomain: "net-ninja-pwa.firebaseapp.com",
+      databaseURL: "https://net-ninja-pwa.firebaseio.com",
+      projectId: "net-ninja-pwa",
+      storageBucket: "net-ninja-pwa.appspot.com",
+      messagingSenderId: "1008745109838"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+  </script>
+  <script src="/javascript/pwa/app.js"></script>
+  <script src="/javascript/pwa/db.js"></script>
   <!-- END Javascript-->
   
   </body>
