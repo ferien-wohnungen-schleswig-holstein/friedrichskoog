@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="manifest" href="/manifest.json">
      <!-- viewport for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- link font awesome-->
@@ -361,16 +362,7 @@
   <!-- End Footer-->
   
   <!-- Javascript -->
-  <script src="./js/parallax.js"></script><!-- parallax JS-->
-  <script>
-    $(window).scroll(function () { 
-
-$('.twit-bird').css({
-  'top' : -($(this).scrollTop()/6)+"px"
-}); 
-
-});
-  </script>
+  <script src="./javascript/parallax.js"></script><!-- parallax JS-->
   <script>
     alert(  "Diese Website befindet sich noch in der Entwicklung."+
       "Datenschutzerklärung, Impressum, 360 Grad Bilder sowie einige Verbesserungen folgen noch!");
@@ -390,8 +382,8 @@ $('.twit-bird').css({
     firebase.initializeApp(config);
     const db = firebase.firestore();
   </script>
-  <script src="/javascript/pwa/app.js"></script>
-  <script src="/javascript/pwa/db.js"></script>
+  <script src="/javascript/app.js"></script>
+  <script src="/javascript/db.js"></script>
   <!-- END Javascript-->
   
   </body>
